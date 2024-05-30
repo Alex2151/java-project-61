@@ -34,6 +34,11 @@ tasks.test {
     useJUnitPlatform()
 }
 
+tasks.getByName("run", JavaExec::class) {
+    standardInput = System.`in`
+}
+
+
 //Groovy
 /*
 tasks managedVersions {
