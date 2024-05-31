@@ -4,4 +4,7 @@ run-dist:
 build-dist:
 	./gradlew installDist
 
+check-dist:
+	./gradlew checkstyleMain
+
 
