@@ -3,10 +3,15 @@ plugins {
     id ("io.spring.dependency-management") version "1.1.5" //"1.0.11.RELEASE"
     application
     //id ("java-
+    checkstyle
 }
 
 application {
     mainClass="hexlet.code.App"
+}
+
+checkstyle {
+    toolVersion = "10.12.4"
 }
 
 group = "hexlet.code"
@@ -27,6 +32,9 @@ dependencies {
     testImplementation("org.junit.jupiter:junit-jupiter")
     //implementation("org.springframework.integration:spring-integration-core")
     //
+    checkstyle ("com.puppycrawl.tools:checkstyle:${checkstyle.toolVersion}")
+    //checkstyle "group:artifact:version"
+
 }
 
 
