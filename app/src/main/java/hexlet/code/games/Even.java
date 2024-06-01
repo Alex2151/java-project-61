@@ -23,8 +23,8 @@ public class Even {
             correctAnswer = number % 2 == 0 ? "yes" : "no";
 
             //System.out.println("Question: " + number);
-            Engine.question();
-            System.out.println(number);
+            Engine.question("" + number);
+            //System.out.println(number);
             //System.out.print("Your answer: ");
 
             //answer = console.next();

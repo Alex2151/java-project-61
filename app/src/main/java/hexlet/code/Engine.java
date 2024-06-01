@@ -25,13 +25,12 @@ public class Engine {
         return randomNumber.nextInt();
     }
 
-    public static void question() {
-        System.out.print("Question: ");
+    public static void question(String message) {
+        System.out.println("Question: " + message);
     }
 
     public static String answer(Scanner console) {
         System.out.print("Your answer: ");
-
         return console.next();
     }
 
@@ -46,5 +45,16 @@ public class Engine {
 
     public static void congrats() {
         System.out.println("Congratulations, " + userName + "!");
+    }
+
+    public static int greatestComDev(int firstNumber, int secondNumber) {
+        while (firstNumber != 0 && secondNumber != 0) {
+            if (firstNumber > secondNumber) {
+                firstNumber %= secondNumber;
+            } else {
+                secondNumber %= firstNumber;
+            }
+        }
+        return firstNumber + secondNumber;
     }
 }

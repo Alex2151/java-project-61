@@ -40,3 +40,8 @@ bin/
 
 ### Mac OS ###
 .DS_Store
+
+### MyTestClasses ###
+app/src/main/java/hexlet/code/*.class
+app/src/main/java/hexlet/code/Test.java
+

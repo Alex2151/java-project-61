@@ -10,3 +10,8 @@ Step_5
 Step_6
 ------
 [Calc_Game](https://asciinema.org/a/hSOsumqLHnIOyYepJ9YKTFgqI)
+
+Step_7
+------
+[GCD_Game](https://asciinema.org/a/EELpoJcDLptB0qQozsxv5jcw4)
+

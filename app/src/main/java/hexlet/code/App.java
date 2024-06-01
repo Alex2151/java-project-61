@@ -4,6 +4,7 @@ import java.util.Scanner;
 import hexlet.code.games.Even;
 import hexlet.code.games.Calc;
 import java.util.InputMismatchException;
+import hexlet.code.games.GCD;
 
 
 public class App {
@@ -26,8 +27,13 @@ public class App {
             case 2:
                 //name = Cli.sayHello(console);
                 Even.play(console);
+                break;
             case 3:
                 Calc.play(console);
+                break;
+            case 4:
+                GCD.play(console);
+                break;
             default:
                 break;
         }
@@ -44,6 +50,7 @@ public class App {
             System.out.println("1 - Greet");
             System.out.println("2 - Even");
             System.out.println("3 - Calc");
+            System.out.println("4 - GCD");
 
             System.out.println("0 - Exit");
 
@@ -65,6 +72,8 @@ public class App {
                 case 2:
                     return enteredNumber;
                 case 3:
+                    return enteredNumber;
+                case 4:
                     return enteredNumber;
                 default:
                     System.out.println("You entered the WRONG number.\nTry again!");
