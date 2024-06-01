@@ -6,7 +6,7 @@
 <!--![example workflow](https://github.com/github/docs/actions/workflows/main.yml/badge.svg)-->
 <!--![example workflow](https://github.com/Alex2151/java-project-61/actions/workflows/hexlet-check.yml/badge.svg)-->
 
-![example workflow](https://github.com/Alex2151/java-project-61/blob/2d364bc00c5e83eacbd4cca8005052c23b6c49a7/.github/workflows/hexlet-check.yml/badge.svg)
+<!--![example workflow](https://github.com/Alex2151/java-project-61/blob/2d364bc00c5e83eacbd4cca8005052c23b6c49a7/.github/workflows/hexlet-check.yml/badge.svg)-->
 
 
 Step_5
