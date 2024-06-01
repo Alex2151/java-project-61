@@ -6,6 +6,7 @@ import hexlet.code.games.Calc;
 import java.util.InputMismatchException;
 import hexlet.code.games.GCD;
 import hexlet.code.games.Progression;
+import hexlet.code.games.Prime;
 
 
 public class App {
@@ -37,6 +38,8 @@ public class App {
                 break;
             case 5:
                 Progression.play(console);
+            case 6:
+                Prime.play(console);
             default:
                 break;
         }
@@ -55,6 +58,7 @@ public class App {
             System.out.println("3 - Calc");
             System.out.println("4 - GCD");
             System.out.println("5 - Progression");
+            System.out.println("6 - Prime");
 
             System.out.println("0 - Exit");
 
@@ -70,17 +74,20 @@ public class App {
 
             switch (enteredNumber) {
                 case 1:
-                    return enteredNumber;
+                    //return enteredNumber;
                 case 0:
-                    return enteredNumber;
+                    //return enteredNumber;
                 case 2:
-                    return enteredNumber;
+                    //return enteredNumber;
                 case 3:
-                    return enteredNumber;
+                    //return enteredNumber;
                 case 4:
-                    return enteredNumber;
+                    //return enteredNumber;
                 case 5:
+                    //return enteredNumber;
+                case 6:
                     return enteredNumber;
+
                 default:
                     System.out.println("You entered the WRONG number.\nTry again!");
             }

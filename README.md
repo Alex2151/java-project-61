@@ -19,3 +19,7 @@ Step_8
 ------
 [Progression_Game](https://asciinema.org/a/VVOeQv7sz4hkePzJWsgFehvXF)
 
+Step_9
+------
+[Prime_Game](https://asciinema.org/a/TkEiwOtRJ8I8E4pZKubsrQSSF)
+
