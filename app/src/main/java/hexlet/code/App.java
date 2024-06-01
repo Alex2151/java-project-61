@@ -2,6 +2,8 @@ package hexlet.code;
 
 import java.util.Scanner;
 import hexlet.code.games.*;
+import java.util.InputMismatchException;
+
 
 public class App {
     public static void main(String[] args) {
@@ -23,6 +25,8 @@ public class App {
             case 2:
                 //name = Cli.sayHello(console);
                 Even.play(console);
+			case 3:
+				Calc.play(console);
             default:
                 break;
         }
@@ -38,11 +42,19 @@ public class App {
             System.out.println("\n" + "Please enter the game number and press Enter.");
             System.out.println("1 - Greet");
             System.out.println("2 - Even");
+			System.out.println("3 - Calc");
 
             System.out.println("0 - Exit");
 
             System.out.print("Your choise: ");
-            enteredNumber = console.nextInt();
+			try {
+				enteredNumber = console.nextInt();
+			}
+			catch (InputMismatchException ex) {
+				System.out.println("Please, enter the number!");
+				console.nextLine();
+				continue;
+			}
             System.out.println("");
 
             switch (enteredNumber) {
@@ -52,6 +64,8 @@ public class App {
                     return enteredNumber;
                 case 2:
                     return enteredNumber;
+				case 3:
+					return enteredNumber;
                 default:
                     System.out.println("You entered the WRONG number.\nTry again!");
             }
