@@ -15,3 +15,7 @@ Step_7
 ------
 [GCD_Game](https://asciinema.org/a/EELpoJcDLptB0qQozsxv5jcw4)
 
+Step_8
+------
+[Progression_Game](https://asciinema.org/a/VVOeQv7sz4hkePzJWsgFehvXF)
+
