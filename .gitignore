@@ -44,4 +44,5 @@ bin/
 ### MyTestClasses ###
 app/src/main/java/hexlet/code/*.class
 app/src/main/java/hexlet/code/Test.java
+app/src/main/java/hexlet/code/GamesNumber.java
 

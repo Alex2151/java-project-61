@@ -7,33 +7,43 @@ import java.util.InputMismatchException;
 import hexlet.code.games.GCD;
 import hexlet.code.games.Progression;
 import hexlet.code.games.Prime;
+//import hexlet.code.GamesNumber;
 
 
 public class App {
+    static final int EXIT = 0;
+    static final int GREET = 1;
+    static final int EVEN = 2;
+    static final int CALC = 3;
+    static final int GCDEV = 4;
+    static final int PROGR = 5;
+    static final int PRIME = 6;
+
     public static void main(String[] args) {
         Scanner console = new Scanner(System.in);
         int number = choise(console);
+        //GamesNumber gamesNumber;
 
         switch (number) {
-            case 1:
+            case GREET:
                 Engine.welcome(console);
                 break;
-            case 0:
+            case EXIT:
                 Engine.goodbuy();
                 break;
-            case 2:
+            case EVEN:
                 Even.play(console);
                 break;
-            case 3:
+            case CALC:
                 Calc.play(console);
                 break;
-            case 4:
+            case GCDEV:
                 GCD.play(console);
                 break;
-            case 5:
+            case PROGR:
                 Progression.play(console);
                 break;
-            case 6:
+            case PRIME:
                 Prime.play(console);
                 break;
             default:
@@ -45,6 +55,7 @@ public class App {
 
     public static int choise(Scanner console) {
         int enteredNumber = -1;
+        GamesNumber gamesNumber;
 
         do {
             System.out.println("\n" + "Please enter the game number and press Enter.");
@@ -68,19 +79,19 @@ public class App {
             System.out.println("");
 
             switch (enteredNumber) {
-                case 1:
+                case GREET:
                     //return enteredNumber;
-                case 0:
+                case EXIT:
                     //return enteredNumber;
-                case 2:
+                case EVEN:
                     //return enteredNumber;
-                case 3:
+                case CALC:
                     //return enteredNumber;
-                case 4:
+                case GCDEV:
                     //return enteredNumber;
-                case 5:
+                case PROGR:
                     //return enteredNumber;
-                case 6:
+                case PRIME:
                     return enteredNumber;
 
                 default:
@@ -89,3 +100,15 @@ public class App {
         } while (true);
     }
 }
+
+/*
+public enum GamesNumber {
+    EXIT,
+    GREET,
+    EVEN,
+    CALC,
+    GCD,
+    PROGR,
+    PRIME
+}
+*/
