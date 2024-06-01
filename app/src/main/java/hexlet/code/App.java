@@ -55,7 +55,7 @@ public class App {
 
     public static int choise(Scanner console) {
         int enteredNumber = -1;
-        GamesNumber gamesNumber;
+        //GamesNumber gamesNumber;
 
         do {
             System.out.println("\n" + "Please enter the game number and press Enter.");

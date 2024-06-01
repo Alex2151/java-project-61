@@ -7,4 +7,8 @@ build-dist: check-dist
 check-dist:
 	./gradlew checkstyleMain
 
+git-push:
+	git add .
+	git commit -m "Auto commit"
+	git push
 
