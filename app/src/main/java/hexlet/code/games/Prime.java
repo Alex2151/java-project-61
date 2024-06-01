@@ -16,7 +16,7 @@ public class Prime {
 
         for (int j = 0; j < Engine.GAME_ROUNDS; ++j) {
             correctAnswer = "yes";
-            number = Math.abs(Engine.getRandomIntegerNumber()) % 100 + 1;
+            number = Math.abs(Engine.getRandomIntegerNumber()) % 100 + 2;
 
             for (int i = 2; i < number / 2; ++i) {
                 if (number % i == 0) {
