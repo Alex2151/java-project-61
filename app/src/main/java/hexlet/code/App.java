@@ -1,25 +1,28 @@
 package hexlet.code;
 
 import java.util.Scanner;
+import hexlet.code.games.*;
 
 public class App {
     public static void main(String[] args) {
         Scanner console = new Scanner(System.in);
         int number = choise(console);
-        String name;
+        //String name;
 
         //System.out.println("");
 
         switch (number) {
             case 1:
-                name = Cli.sayHello(console);
+                //name = Cli.sayHello(console);
+				Engine.welcome(console);
                 break;
             case 0:
-                System.out.println("Goodbuy, Stranger! =)");
+                //System.out.println("Goodbuy, Stranger! =)");
+				Engine.goodbuy();
                 break;
             case 2:
-                name = Cli.sayHello(console);
-                Even.play(console, name);
+                //name = Cli.sayHello(console);
+                Even.play(console);
             default:
                 break;
         }
