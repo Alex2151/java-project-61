@@ -11,28 +11,14 @@ public class GCD {
 
         int firstNumber;
         int secondNumber;
-        //int forSign;
-        //String sign;
         int correctAnswer = -1;
         int answer = 0;
 
-        for (int i = 0; i < Engine.GAMEROUNDS; ++i) {
+        for (int i = 0; i < Engine.GAME_ROUNDS; ++i) {
             firstNumber = Math.abs(Engine.getRandomIntegerNumber() % 100);
             secondNumber = Math.abs(Engine.getRandomIntegerNumber() % 100);
-            /*forSign = Engine.getRandomIntegerNumber() % 3;
-            if (forSign == 0) {
-                sign = "+";
-                correctAnswer = firstNumber + secondNumber;
-            } else if (forSign == 1) {
-                sign = "-";
-                correctAnswer = firstNumber - secondNumber;
-            } else {
-                sign = "*";
-                correctAnswer = firstNumber * secondNumber;
-            }*/
 
             Engine.question(firstNumber + " " + secondNumber);
-            //System.out.println(firstNumber + " " + sign + " " + secondNumber);
 
             String temp = null;
             try {

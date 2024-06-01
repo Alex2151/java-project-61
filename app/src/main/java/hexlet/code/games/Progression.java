@@ -17,7 +17,7 @@ public class Progression {
 
         System.out.println("What number is missing in the progression?");
 
-        for (int j = 0; j < Engine.GAMEROUNDS; ++j) {
+        for (int j = 0; j < Engine.GAME_ROUNDS; ++j) {
             seed = Engine.getRandomIntegerNumber() % 100;
             step = Engine.getRandomIntegerNumber() % 100;
             size = Math.abs(Engine.getRandomIntegerNumber()) % 6 + 5;
@@ -34,10 +34,7 @@ public class Progression {
 
             }
             Engine.question(message);
-/*
-            System.out.printf("seed = %d\nstep = %d\nsize = %d\nblank = %d\ncorrectAnswer = %d\n",
-                seed, step, size, blank, correctAnswer);
-*/
+
             String temp = null;
             try {
                 temp = Engine.answer(console);

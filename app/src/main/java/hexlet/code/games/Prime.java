@@ -14,9 +14,9 @@ public class Prime {
         String correctAnswer;
         int dividers = 0;
 
-        for (int j = 0; j < Engine.GAMEROUNDS; ++j) {
+        for (int j = 0; j < Engine.GAME_ROUNDS; ++j) {
             correctAnswer = "yes";
-            number = Math.abs(Engine.getRandomIntegerNumber()) % 100;
+            number = Math.abs(Engine.getRandomIntegerNumber()) % 100 + 1;
 
             for (int i = 2; i < number / 2; ++i) {
                 if (number % i == 0) {

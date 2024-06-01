@@ -5,7 +5,7 @@ import java.util.Random;
 
 public class Engine {
     public static String userName;
-    public static final int GAMEROUNDS = 3;
+    public static final int GAME_ROUNDS = 3;
     private static Random randomNumber = new Random();
 
     public static void welcome(Scanner console) {

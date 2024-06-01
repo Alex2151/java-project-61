@@ -13,21 +13,15 @@ public class App {
     public static void main(String[] args) {
         Scanner console = new Scanner(System.in);
         int number = choise(console);
-        //String name;
-
-        //System.out.println("");
 
         switch (number) {
             case 1:
-                //name = Cli.sayHello(console);
                 Engine.welcome(console);
                 break;
             case 0:
-                //System.out.println("Goodbuy, Stranger! =)");
                 Engine.goodbuy();
                 break;
             case 2:
-                //name = Cli.sayHello(console);
                 Even.play(console);
                 break;
             case 3:
@@ -38,8 +32,10 @@ public class App {
                 break;
             case 5:
                 Progression.play(console);
+                break;
             case 6:
                 Prime.play(console);
+                break;
             default:
                 break;
         }
@@ -48,7 +44,6 @@ public class App {
     }
 
     public static int choise(Scanner console) {
-        //Scanner console = new Scanner(System.in);
         int enteredNumber = -1;
 
         do {
