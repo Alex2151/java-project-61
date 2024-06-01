@@ -3,6 +3,8 @@
 
 [![Maintainability](https://api.codeclimate.com/v1/badges/ecabba8d20727c02ad4b/maintainability)](https://codeclimate.com/github/Alex2151/java-project-61/maintainability)
 
+![example workflow](https://github.com/github/docs/actions/workflows/main.yml/badge.svg)
+
 Step_5
 ------
 [Even_Game](https://asciinema.org/a/4JlyQVf0EtSCwlTFnhZDxvK4N)
