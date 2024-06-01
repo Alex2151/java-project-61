@@ -4,6 +4,8 @@ import java.util.Scanner;
 import hexlet.code.Engine;
 
 public class GCD {
+    private static final int MAX_NUMBER = 100;
+
     public static void play(Scanner console) {
         Engine.welcome(console);
 
@@ -15,8 +17,8 @@ public class GCD {
         int answer = 0;
 
         for (int i = 0; i < Engine.GAME_ROUNDS; ++i) {
-            firstNumber = Math.abs(Engine.getRandomIntegerNumber() % 100);
-            secondNumber = Math.abs(Engine.getRandomIntegerNumber() % 100);
+            firstNumber = Math.abs(Engine.getRandomIntegerNumber() % MAX_NUMBER);
+            secondNumber = Math.abs(Engine.getRandomIntegerNumber() % MAX_NUMBER);
 
             Engine.question(firstNumber + " " + secondNumber);
 

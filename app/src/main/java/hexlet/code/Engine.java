@@ -4,9 +4,13 @@ import java.util.Scanner;
 import java.util.Random;
 
 public class Engine {
-    public static String userName;
+    private static String userName;
     public static final int GAME_ROUNDS = 3;
     private static Random randomNumber = new Random();
+
+    public static String getUserName() {
+        return userName;
+    }
 
     public static void welcome(Scanner console) {
         System.out.println("Welcome to the Brain Games!");

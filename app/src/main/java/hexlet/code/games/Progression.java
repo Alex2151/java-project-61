@@ -4,6 +4,10 @@ import java.util.Scanner;
 import hexlet.code.Engine;
 
 public class Progression {
+    private static final int MAX_NUMBER = 100;
+    private static final int MIN_SIZE_OF_PROGRESSION = 6;
+    private static final int EXTRA_SIZE_OF_PROGRESSION = 5;
+
     public static void play(Scanner console) {
         Engine.welcome(console);
 
@@ -18,9 +22,9 @@ public class Progression {
         System.out.println("What number is missing in the progression?");
 
         for (int j = 0; j < Engine.GAME_ROUNDS; ++j) {
-            seed = Engine.getRandomIntegerNumber() % 100;
-            step = Engine.getRandomIntegerNumber() % 100;
-            size = Math.abs(Engine.getRandomIntegerNumber()) % 6 + 5;
+            seed = Engine.getRandomIntegerNumber() % MAX_NUMBER;
+            step = Engine.getRandomIntegerNumber() % MAX_NUMBER;
+            size = Math.abs(Engine.getRandomIntegerNumber()) % MIN_SIZE_OF_PROGRESSION + EXTRA_SIZE_OF_PROGRESSION;
             blank = Math.abs(Engine.getRandomIntegerNumber()) % size;
 
             for (int i = 0; i < size; ++i) {

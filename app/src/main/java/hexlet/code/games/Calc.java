@@ -6,6 +6,9 @@ import hexlet.code.Engine;
 //import java.lang.Math;
 
 public class Calc {
+    private static final int MAX_NUMBER = 100;
+    private static final int OPERATIONS_COUNT = 3;
+
     public static void play(Scanner console) {
         Engine.welcome(console);
 
@@ -19,9 +22,9 @@ public class Calc {
         int answer = 0;
 
         for (int i = 0; i < Engine.GAME_ROUNDS; ++i) {
-            firstNumber = Math.abs(Engine.getRandomIntegerNumber() % 100);
-            secondNumber = Math.abs(Engine.getRandomIntegerNumber() % 100);
-            forSign = Engine.getRandomIntegerNumber() % 3;
+            firstNumber = Math.abs(Engine.getRandomIntegerNumber() % MAX_NUMBER);
+            secondNumber = Math.abs(Engine.getRandomIntegerNumber() % MAX_NUMBER);
+            forSign = Engine.getRandomIntegerNumber() % OPERATIONS_COUNT;
             if (forSign == 0) {
                 sign = "+";
                 correctAnswer = firstNumber + secondNumber;
