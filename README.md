@@ -7,5 +7,6 @@ Step_5
 ------
 [Even_Game](https://asciinema.org/a/4JlyQVf0EtSCwlTFnhZDxvK4N)
 
-
-
+Step_6
+------
+[Calc_Game](https://asciinema.org/a/hSOsumqLHnIOyYepJ9YKTFgqI)

@@ -1,7 +1,8 @@
 package hexlet.code;
 
 import java.util.Scanner;
-import hexlet.code.games.*;
+import hexlet.code.games.Even;
+import hexlet.code.games.Calc;
 import java.util.InputMismatchException;
 
 
@@ -16,17 +17,17 @@ public class App {
         switch (number) {
             case 1:
                 //name = Cli.sayHello(console);
-				Engine.welcome(console);
+                Engine.welcome(console);
                 break;
             case 0:
                 //System.out.println("Goodbuy, Stranger! =)");
-				Engine.goodbuy();
+                Engine.goodbuy();
                 break;
             case 2:
                 //name = Cli.sayHello(console);
                 Even.play(console);
-			case 3:
-				Calc.play(console);
+            case 3:
+                Calc.play(console);
             default:
                 break;
         }
@@ -42,19 +43,18 @@ public class App {
             System.out.println("\n" + "Please enter the game number and press Enter.");
             System.out.println("1 - Greet");
             System.out.println("2 - Even");
-			System.out.println("3 - Calc");
+            System.out.println("3 - Calc");
 
             System.out.println("0 - Exit");
 
             System.out.print("Your choise: ");
-			try {
-				enteredNumber = console.nextInt();
-			}
-			catch (InputMismatchException ex) {
-				System.out.println("Please, enter the number!");
-				console.nextLine();
-				continue;
-			}
+            try {
+                enteredNumber = console.nextInt();
+            } catch (InputMismatchException ex) {
+                System.out.println("Please, enter the number!");
+                console.nextLine();
+                continue;
+            }
             System.out.println("");
 
             switch (enteredNumber) {
@@ -64,8 +64,8 @@ public class App {
                     return enteredNumber;
                 case 2:
                     return enteredNumber;
-				case 3:
-					return enteredNumber;
+                case 3:
+                    return enteredNumber;
                 default:
                     System.out.println("You entered the WRONG number.\nTry again!");
             }

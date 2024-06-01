@@ -7,11 +7,11 @@ import hexlet.code.Engine;
 
 public class Even {
     public static void play(Scanner console/*, String name*/) {
-		Engine.welcome(console);
-		
+        Engine.welcome(console);
+
         System.out.println("Answer 'yes' if the number is even, otherwise answer 'no'.");
 
-        int round = Engine.gameRounds;
+        int round = Engine.GAMEROUNDS;
         //boolean result = true;
         String answer;
         String correctAnswer;
@@ -23,27 +23,27 @@ public class Even {
             correctAnswer = number % 2 == 0 ? "yes" : "no";
 
             //System.out.println("Question: " + number);
-			Engine.question();
-			System.out.println(number);
+            Engine.question();
+            System.out.println(number);
             //System.out.print("Your answer: ");
 
             //answer = console.next();
-			answer = Engine.answer(console);
+            answer = Engine.answer(console);
             //System.out.print("\n");
             if (answer.equals(correctAnswer)) {
                 //++score;
                 //System.out.println("Correct!");
-				Engine.correctAnswer();
+                Engine.correctAnswer();
             } else {
                 //System.out.print("\n");
                 /*System.out.println(answer + " is wrong answer ;(. Correct answer was " + correctAnswer);
                 System.out.println("Let's try again, " + name + "!");*/
-				Engine.wrongAnswer(answer, correctAnswer);
+                Engine.wrongAnswer(answer, correctAnswer);
                 return;
                 //result = false;
             }
         }
         //System.out.println("Congratulations, " + name + "!");
-		Engine.congrats();
+        Engine.congrats();
     }
 }
